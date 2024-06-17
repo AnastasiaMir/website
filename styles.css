@@ -1,0 +1,340 @@
+body {
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: normal;
+    font-weight: 400;
+    color: #484848;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background-color: #e1f0f8;
+}
+.header-top {
+    display: flex;
+    flex-direction: row;
+}
+.main-logo {
+    width: 20%;
+    margin-top: 2%;
+    margin-left: 2%;
+    height: auto;
+}
+.calculation-div {
+    width:55%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.price-calculation {
+    margin-right: 15%;
+    margin-bottom: 4%;
+    font-size: 1.5vw;
+    color: #f36240;
+}
+.site-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0;
+
+    list-style: none;
+}
+
+.site-navigation a {
+    font-size: 1.5vw;
+    color: #5f6973;
+    text-decoration: none;
+}
+
+.site-navigation li {
+    padding: 20px 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 228px;
+            flex: 0 0 228px;
+    flex: 1;
+
+    text-align: center;
+
+    border-right: 1px solid #5f6973;
+}
+
+li.contacts {
+    border-right: none;
+}
+
+.site-navigation-current {
+    background-color: #7bc3d5;
+}
+
+.site-navigation-current a:not([href]) {
+    color: #ffffff;
+}
+li.navigation a:hover {
+  color: #ffffff;
+}
+li.navigation:hover {
+  background-color: #7bc3d5;
+}
+
+.contacts {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 2%;
+}
+
+.schedule {
+    font-size: 1.1vw;
+    margin-left: 20%
+}
+.phone {
+    font-size: 2vw;
+}
+
+.main-heading {
+    font-size: 4vw;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+p.description {
+    font-weight: 0;
+    font-size: 1.65vw;
+    margin-top: 0;
+}
+
+.wrapper {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+}
+
+.index-columns {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-right: 0;
+    justify-content: space-between;
+}
+section.recommendations {
+    width: 21%;
+    background-color: #ffffff;
+    border-radius: 3px;
+    height: max-content;
+}
+section.offer-section {
+    width: 77%;
+    background-color: #ffffff;
+    border-radius: 3px;
+    margin-left: 2%;
+}
+.main-header {
+    background-color: #ffffff;
+}
+
+.recommend {
+    padding-top: 3px;
+    padding-left: 25px;
+
+    font-size: 1.3vw;
+    color: #4b4b4b;
+}
+.container {
+    background-color: #e1f0f8;
+}
+
+
+
+.other {
+    padding: 0;
+    list-style: none;
+}
+
+.other li {
+    padding: 5px 5px 10px 25px;
+}
+
+.other a {
+    font-size: 1vw;
+    color: #8a8a8a;
+}
+
+.other a:hover,
+.other a:focus {
+    color: #eb5825;
+}
+
+.offer {
+    padding-left: 5%;
+    font-size: 1.6vw;
+}
+
+.index-columns2 {
+    display: flex;
+    flex-shrink: inherit;
+}
+
+.irish-oak {
+    padding: 0 0 0 6%;
+    margin: 0;
+    margin-bottom: 2%;
+    flex: 1;
+}
+
+.oak-caption {
+    padding-top: 10%;
+    padding-left: 20%;
+    color: #8a8a8a;
+    align-self: center;
+    font-size: 1.2vw;
+}
+
+.rehau-features {
+    padding: 0;
+    margin: 0 0 35px 15px;
+    
+}
+
+.rehau-features li {
+    padding: 1% 0;
+    font-size: 1vw;
+}
+
+.color-choice {
+    font-size: 20px;
+}
+
+.rehau-colors {
+    display: flex;
+    margin: 0 0 90px -35px;
+    padding: 0;
+    list-style: none;
+}
+
+.rehau-colors li {
+    margin-top: 0;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.color-picture1,
+.color-picture2,
+.color-picture3, 
+.color-picture4,
+.color-picture5,
+.color-picture6,
+.color-picture7 {
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+    background-repeat: no-repeat;
+}
+
+.point:checked + label::after {
+    content: "";
+
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+
+    width: 2vw;
+    height: 2vw;
+
+    background-image: url(../img/check.png);
+    background-repeat: no-repeat;
+}
+
+.point:not(:checked) + label::after {
+    content: "";
+
+    position: absolute;
+
+    background-image: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+  input[type="radio"].visually-hidden { 
+    /* position: absolute;  */
+  
+    width: 1px; 
+    height: 1px; 
+    border: 0; 
+    padding: 0; 
+
+    overflow: hidden; 
+  }
+  .block1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 2;
+  }
+.oak-picture {
+    width:70%;
+    margin-bottom: 20%;
+}
+.more-options {
+    width: 63%;
+    font-size: 0.9vw;
+}
+.calculation-btn {
+    margin-bottom: 1%;
+    padding: 4% 7% 4% 7%;
+
+    font-size: 1.2vw;
+    line-height: 5%;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    background-color: #eb5825;
+}
+
+.send-request {
+    color: #8a8a8a;
+    font-size: 0.8vw;
+}
+
+.lamination {
+    background-color: #ffffff;
+    width: 77%;
+    margin-left: 23%;
+    border-radius: 5px;
+}
+.quote {
+    background-color: #ffffff;
+    width: 77%;
+    margin-left: 23%;
+}
+.feedback-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 77%;
+    margin-left: 23%;
+}
+
+.lamination-use {
+    padding: 33px 0 0 26px;
+    font-size: 1.7vw;
+    font-weight: 400;
+}
+.lamination-desc {
+    display: flex;
+    flex-direction: row;
+}
+.lamination-icon {
+    width: 4vw;
+    height: 4vw;
+    margin: 1% 3% 1% 3%;
+}
+.about-lamination {
+    font-size: 0.9vw;
+    margin: 1% 5% 1% 2%;
+    text-align: left;
+}
+
