@@ -32,9 +32,7 @@ body {
     font-size: 1.5vw;
     color: #f36240;
 }
-.site-navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
+.site-navigation { 
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -50,10 +48,7 @@ body {
 }
 
 .site-navigation li {
-    padding: 20px 0;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 228px;
-            flex: 0 0 228px;
+    padding: 2% 0;
     flex: 1;
 
     text-align: center;
@@ -164,7 +159,8 @@ section.offer-section {
 }
 
 .other a:hover,
-.other a:focus {
+.other a:focus,
+.another-reviews {
     color: #eb5825;
 }
 
@@ -222,7 +218,6 @@ section.offer-section {
 }
 
 input.visually-hidden {
-    /* accent-color: #fff; */
     visibility: hidden;
 }
 
@@ -313,12 +308,17 @@ input.visually-hidden {
     background-color: #ffffff;
     width: 77%;
     margin-left: 23%;
+    font-size: 0.9vw;
+    padding-top: 1%;
+    margin-top: 1%;
+    border-radius: 5px;
 }
 .feedback-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
+    padding-bottom: 0;
     width: 77%;
     margin-left: 23%;
 }
@@ -355,7 +355,6 @@ ol li {
 	position: relative;	
 	margin: 0 2% 0 2%;
 	padding: 0 0 10px 0;
-	line-height: 1.4;
 }
 ol li:before {
 	content: counter(num); 
@@ -363,9 +362,9 @@ ol li:before {
 	display: inline-block;
 	position: absolute;
 	top: 0;
-	left: -38px;
-	width: 28px;
-	height: 28px;
+	left: -5%;
+	width: 2vw;
+	height: 2vw;
 	background: #fff;
 	color: black;
 	text-align: center;
@@ -374,4 +373,37 @@ ol li:before {
 	border-radius: 50%;
 	border: 1px solid black;
     
+}
+h2 {
+    margin-bottom: 0;
+}
+.conditions {
+    margin: 0;
+    color: #8a8a8a;
+}
+.stars {
+    margin-top: 1%;
+}
+.read-full {
+    align-self: self-end;
+    font-size: 1vw;
+    color: #eb5825;
+    text-decoration: none;
+    border-bottom: 1px dashed #eb5825;
+    margin-top: 0;
+    padding-top: 0;
+}
+.arrow {
+    width: 1.0vw;
+    margin-bottom: -0.5%;
+}
+
+.leave-review {
+    margin: 2% 0% 3% 5%;
+    padding: 1% 2%;
+    font-size: 1vw;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    background-color: #eb5825;
 }
