@@ -221,6 +221,11 @@ section.offer-section {
     padding-left: 5%;
 }
 
+input.visually-hidden {
+    /* accent-color: #fff; */
+    visibility: hidden;
+}
+
 .color-picture1,
 .color-picture2,
 .color-picture3, 
@@ -338,3 +343,35 @@ section.offer-section {
     text-align: left;
 }
 
+ol {
+	list-style-type: none; 
+	counter-reset: num;
+	margin: 0 0 0 7%;
+	padding: 15px 0 5px 0;
+    font-size: 0.9vw;
+	
+}
+ol li {
+	position: relative;	
+	margin: 0 2% 0 2%;
+	padding: 0 0 10px 0;
+	line-height: 1.4;
+}
+ol li:before {
+	content: counter(num); 
+	counter-increment: num;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: -38px;
+	width: 28px;
+	height: 28px;
+	background: #fff;
+	color: black;
+	text-align: center;
+	line-height: 28px;
+	font-size: 1vw;
+	border-radius: 50%;
+	border: 1px solid black;
+    
+}
