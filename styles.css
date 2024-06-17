@@ -244,7 +244,7 @@ section.offer-section {
     width: 2vw;
     height: 2vw;
 
-    background-image: url(../img/check.png);
+    background-image: url(./img/check.png);
     background-repeat: no-repeat;
 }
 
